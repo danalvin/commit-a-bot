@@ -7,7 +7,7 @@ repo_path = "//home/waituika/projects/commit-a-bot"
 
 
 # Define the file to update
-file_path = "//home/waituika/projects/file.txt"
+file_path = "//home/waituika/projects/commit-a-bot/file.txt"
 
 # Function to create a commit
 def create_commit():
