@@ -24,6 +24,6 @@ def create_commit():
     repo.index.commit(commit_message)
 
 # Create six commits per day
-for _ in range(6):
+while True:
     create_commit()
-    time.sleep(4 * 60 * 60)  # Sleep for 4 hours
+    time.sleep(3 * 60)  # Sleep for 3 minutes
