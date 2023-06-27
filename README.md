@@ -12,7 +12,7 @@ Commit Bot is a Python script that automates commits in a Git repository. It cre
 
 ## Clone the repository to your local machine:
 
-   ``` git clone https://github.com/your-username/commit-bot.git ```
+   ``` git clone https://github.com/danalvin/commit-a-bot ```
 
 ## Install the required dependencies:
 
@@ -23,7 +23,7 @@ Set up your Git repository and ensure it is initialized.
 
 Open the commit_bot.py script in a text editor.
 
-Modify the repo_path variable to specify the path to your local Git repository.
+Modify the ``` repo_path ``` variable to specify the path to your local Git repository.
 
 Save the changes to commit_bot.py.
 
