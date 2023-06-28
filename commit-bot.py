@@ -26,7 +26,15 @@ def create_commit():
     repo.index.add([file_path])
     repo.index.commit(commit_message)
 
-# Create six commits per day
+# Create commits every 3 minutes
+commit_count = 0
+table_header = ["Commit Count", "Time"]
+commit_table = []
+
 while True:
     create_commit()
-    time.sleep(3 * 60)  # Sleep for 3 minutes   
+    commit_count += 1
+    current_time = time.strftime("%H:%M:%S", time.localtime())
+    commit_table.append([commit_count, current_time])
+    print(tabulate(commit_table, headers=table_header, tablefmt="fancy_grid"))
+    time.sleep(3 * 60)  # Sleep for 3 minutes
