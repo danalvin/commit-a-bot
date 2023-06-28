@@ -1,6 +1,7 @@
 import os
 import time
 from git import Repo
+from tabulate import tabulate
 
 # Define the repository path
 repo_path = "//home/waituika/projects/commit-a-bot"
